@@ -107,20 +107,20 @@ delitos-ambientales/
 ├── .gitignore              # Archivos ignorados por git
 └── README.md               # Este archivo
 
-🚀 Uso del Dashboard
-1. Panel de Resumen: Visualiza los KPIs principales
+🚀 **Uso del Dashboard**
+1. **Panel de Resumen**: Visualiza los KPIs principales
 
-2. Gráficos: Explora los datos through gráficos interactivos
+2. **Gráficos**: Explora los datos through gráficos interactivos
 
-3. Mapa: Ve la distribución geográfica de los delitos
+3. **Mapa**: Ve la distribución geográfica de los delitos
 
-4. Tablas: Consulta los datos detallados
+4. **Tablas**: Consulta los datos detallados
 
-5. Filtros: Usa los filtros laterales para segmentar los datos
+5. **Filtros**: Usa los filtros laterales para segmentar los datos
 
-6. Exportación: Descarga los datos filtrados en CSV o Excel
+6. **Exportación**: Descarga los datos filtrados en CSV o Excel
 
-📊 KPIs Disponibles
+📊 **KPIs Disponibles**
 ✅ Total de casos registrados
 
 ✅ Número de parques/monumentos afectados
@@ -133,7 +133,7 @@ delitos-ambientales/
 
 ✅ Promedio de casos por año
 
-🤝 Contribución
+🤝 **Contribución**
 1. Fork el proyecto
 
 2. Crear una rama para tu feature (git checkout -b feature/AmazingFeature)
@@ -144,10 +144,10 @@ delitos-ambientales/
 
 5. Abrir un Pull Request
 
-📝 Licencia
+📝 **Licencia**
 Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
 
-📞 Soporte
+📞 **Soporte**
 Si tienes preguntas o problemas:
 
 Revisa la documentación de Shiny
@@ -156,7 +156,7 @@ Abre un issue en GitHub
 
 Contacta al equipo de desarrollo
 
-🙏 Agradecimientos
+🙏 **Agradecimientos**
 Equipo de RStudio por las herramientas de Shiny
 
 Comunidad de R por el soporte continuo
@@ -164,6 +164,7 @@ Comunidad de R por el soporte continuo
 Gobierno de Nueva Esparta por proveer los datos
 
 Desarrollado con ❤️ para la conservación ambiental de Nueva Esparta
+
 
 
  
