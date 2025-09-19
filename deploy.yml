@@ -2,41 +2,37 @@ name: Deploy to ShinyApps.io
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up R
-      uses: r-lib/actions/setup-r@v2
-      with:
-        r-version: '4.2.0'
-        
-    - name: Install dependencies
-      run: |
-        R -e "install.packages(c('shiny', 'shinydashboard', 'openxlsx', 'readxl', 'dplyr', 'ggplot2', 'plotly', 'DT', 'leaflet', 'shinycssloaders', 'shinyBS', 'rsconnect'))"
-        
-    - name: Deploy to ShinyApps.io
-      env:
-        SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
-        SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
-      run: |
-        R -e "
-        library(rsconnect)
-        setAccountInfo(
-          name = 'tu-usuario',
-          token = '$SHINYAPPS_TOKEN',
-          secret = '$SHINYAPPS_SECRET'
-        )
-        deployApp(
-          appDir = 'app',
-          appName = 'delitos-ambientales',
-          account = 'tu-usuario',
-          forceUpdate = TRUE
-        )
-        "
+      - uses: actions/checkout@v3
+      
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+      
+      - name: Install dependencies
+        run: |
+          R -e "install.packages(c('shiny', 'leaflet', 'ggplot2', 'dplyr', 'lubridate', 'readxl', 'flexdashboard', 'rsconnect'))"
+      
+      - name: Deploy to ShinyApps.io
+        run: |
+          R -e "
+          rsconnect::setAccountInfo(
+            name='${{ secrets.SHINYAPPS_NAME }}',
+            token='${{ secrets.SHINYAPPS_TOKEN }}',
+            secret='${{ secrets.SHINYAPPS_SECRET }}'
+          )
+          rsconnect::deployApp(
+            appDir = 'app',
+            appName = 'delitos-ambientales-ne',
+            account = '${{ secrets.SHINYAPPS_NAME }}',
+            forceUpdate = TRUE
+          )
+          "
+        env:
+          SHINYAPPS_NAME: ${{ secrets.SHINYAPPS_NAME }}
+          SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
+          SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
