@@ -64,7 +64,7 @@ bash
 docker-compose up -d
 La aplicación estará disponible en: http://localhost:3838
 
-🌐 **Despliegue en Producción**
+## 🌐 **Despliegue en Producción**
 
 **Opción 1: ShinyApps.io (Recomendado)**
 1. Crear cuenta en shinyapps.io
@@ -82,7 +82,7 @@ git clone https://github.com/tu-usuario/delitos-ambientales.git
 cd delitos-ambientales
 docker-compose up -d
 
-📁 **Estructura del Proyecto**
+## 📁 **Estructura del Proyecto**
 
 delitos-ambientales/
 ├── app/
@@ -107,7 +107,7 @@ delitos-ambientales/
 ├── .gitignore              # Archivos ignorados por git
 └── README.md               # Este archivo
 
-🚀 **Uso del Dashboard**
+## 🚀 **Uso del Dashboard**
 1. **Panel de Resumen**: Visualiza los KPIs principales
 
 2. **Gráficos**: Explora los datos through gráficos interactivos
@@ -120,7 +120,7 @@ delitos-ambientales/
 
 6. **Exportación**: Descarga los datos filtrados en CSV o Excel
 
-📊 **KPIs Disponibles**
+## 📊 **KPIs Disponibles**
 ✅ Total de casos registrados
 
 ✅ Número de parques/monumentos afectados
@@ -133,7 +133,7 @@ delitos-ambientales/
 
 ✅ Promedio de casos por año
 
-🤝 **Contribución**
+## 🤝 **Contribución**
 1. Fork el proyecto
 
 2. Crear una rama para tu feature (git checkout -b feature/AmazingFeature)
@@ -144,10 +144,10 @@ delitos-ambientales/
 
 5. Abrir un Pull Request
 
-📝 **Licencia**
+## 📝 **Licencia**
 Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
 
-📞 **Soporte**
+## 📞 **Soporte**
 Si tienes preguntas o problemas:
 
 Revisa la documentación de Shiny
@@ -168,3 +168,4 @@ Desarrollado con ❤️ para la conservación ambiental de Nueva Esparta
 
 
  
+
