@@ -84,7 +84,7 @@ docker-compose up -d
 
 ## 📁 **Estructura del Proyecto**
 
-delitos-ambientales/
+DelitosAmbientales/
 ├── app/
 │   ├── app.R                 # Aplicación principal Shiny
 │   ├── R/
@@ -168,4 +168,5 @@ Desarrollado con ❤️ para la conservación ambiental de Nueva Esparta
 
 
  
+
 
