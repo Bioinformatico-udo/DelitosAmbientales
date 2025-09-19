@@ -1,0 +1,124 @@
+
+# Archivo: rsconnect/shinyapps.io/tu-usuario/delitos-ambientales.dcf
+
+```ini
+; Archivo de configuración para ShinyApps.io
+; NO compartir este archivo públicamente - contiene información sensible
+
+name: delitos-ambientales
+title: Dashboard de Delitos Ambientales - Nueva Esparta
+username: tu-usuario
+account: tu-usuario
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1234567890abcdef   ; Este ID se generará automáticamente
+appMode: shiny
+when: 2024-01-01 12:00:00
+lastSync: 2024-01-01 12:00:00
+needsUpdate: false
+
+; Metadatos de la aplicación
+description: Dashboard interactivo para análisis de delitos ambientales en parques y monumentos naturales de Nueva Esparta, Venezuela
+keywords: ambiente, delitos, Venezuela, Nueva Esparta, parques, conservación
+categories: analytics, science, environment
+
+; Configuración de recursos
+maxProcesses: 1
+minProcesses: 0
+maxConnections: 50
+connectTimeout: 60
+readTimeout: 3600
+initTimeout: 3600
+idleTimeout: 5
+workerIdleTimeout: 300
+cpuRequest: 0.5
+cpuLimit: 1
+memoryRequest: 512
+memoryLimit: 1024
+
+; Configuración de logging
+logsDir: logs
+appLogsDir: logs/app
+accessLogsDir: logs/access
+diagnosticsEnabled: true
+diagnosticsCaptureEnabled: true
+
+; Configuración de deployment
+deploymentFile: app/app.R
+deploymentDataDir: app/data
+deploymentRVersion: 4.2.0
+
+; Entorno de ejecución
+env: 
+  R_LIBS: /usr/local/lib/R/site-library:/usr/local/lib/R/library
+  R_LIBS_USER: /usr/local/lib/R/site-library
+  R_LIBS_SITE: /usr/local/lib/R/site-library
+  R_PROFILE: 
+  R_ENVIRON: 
+  R_HOME: /usr/local/lib/R
+  R_SHARE_DIR: /usr/local/lib/R/share
+  R_INCLUDE_DIR: /usr/local/lib/R/include
+  R_DOC_DIR: /usr/local/lib/R/doc
+  MAKE: make
+  RM: rm
+  RSTUDIO: 1
+  EDITOR: vi
+  LANG: en_US.UTF-8
+  LC_ALL: en_US.UTF-8
+  LC_COLLATE: C
+  LC_CTYPE: en_US.UTF-8
+  LC_MESSAGES: en_US.UTF-8
+  LC_MONETARY: en_US.UTF-8
+  LC_NUMERIC: C
+  LC_TIME: en_US.UTF-8
+  TZ: UTC
+
+; Dependencias de paquetes
+packages: 
+  - shiny
+  - shinydashboard
+  - openxlsx
+  - readxl
+  - dplyr
+  - ggplot2
+  - plotly
+  - DT
+  - leaflet
+  - shinycssloaders
+  - shinyBS
+
+; Configuración de red
+externalUrl: https://tu-usuario.shinyapps.io/delitos-ambientales/
+internalUrl: http://127.0.0.1:45678/
+httpKeepAliveTimeout: 15
+httpReadTimeout: 3600
+httpWriteTimeout: 3600
+httpMaxConnectionsPerWorker: 256
+httpMaxPendingConnections: 128
+
+; Configuración de seguridad
+allowExternalUrls: true
+allowUnsignedRMarkdown: true
+autoSnapshot: true
+disablePackageInstallation: false
+forceExternalUrl: false
+
+; Configuración de rendimiento
+rVersion: 4.2.0
+pythonVersion: 
+nodeVersion: 
+buildTimeout: 3600
+runAs: nobody
+runAsCurrentUser: false
+
+; Información de billing (si aplica)
+billingPlan: free   ; o 'standard', 'professional'
+billingPeriod: monthly
+billingAmount: 0.00
+billingCurrency: USD
+
+; Metadata adicional
+documentation: https://github.com/tu-usuario/delitos-ambientales
+sourceUrl: https://github.com/tu-usuario/delitos-ambientales
+license: MIT
+maintainer: Tu Nombre <tu.email@example.com>
