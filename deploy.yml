@@ -27,7 +27,7 @@ jobs:
           )
           rsconnect::deployApp(
             appDir = 'app',
-            appName = 'delitosambientales',
+            appName = 'DelitosAmbientales',
             account = '${{ secrets.SHINYAPPS_NAME }}',
             forceUpdate = TRUE
           )
@@ -36,4 +36,5 @@ jobs:
           SHINYAPPS_NAME: ${{ secrets.SHINYAPPS_NAME }}
           SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
           SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
+
 
